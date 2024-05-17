@@ -34,4 +34,26 @@ public class GameManager : MonoBehaviour
         gameOverView.SetActive(true);
         Time.timeScale = 0;
     }
+
+    private bool isAlternativeMode = false;
+
+    // Método para definir o modo normal
+    public void SetNormalMode()
+    {
+        isAlternativeMode = false;
+    }
+
+    // Método para definir o modo alternativo
+    public void SetAlternativeMode()
+    {
+        isAlternativeMode = true;
+    }
+
+    // Método para verificar se o jogo está no modo alternativo
+    public bool IsAlternativeMode()
+    {
+        return isAlternativeMode;
+    }
 }
+
+
